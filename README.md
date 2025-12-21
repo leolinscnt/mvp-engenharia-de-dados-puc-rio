@@ -62,7 +62,7 @@ Ao responder as perguntas de negócio abaixo, será possível compreender:
 ## Arquitetura da Solução
 
 ### Processamento:
-O pipeline foi construído seguindo o modelo Bronze → Silver → Gold:
+O pipeline foi construído seguindo o modelo Delta Medallion (Camadas Bronze, Silver e Gold):
 
 • Bronze: ingestão dos arquivos CSV, padronização de colunas e armazenamento inicial em Delta;
 
@@ -271,7 +271,7 @@ O inverno apresentou o maior volume de voos no ano, seguido por verão e primave
 
 ![Pergunta 7](./evidencias/pergunta_7.png)
 
-As rotas com maior volume conectam São Paulo/Congonhas ↔ Rio de Janeiro/Santos Dumont, refletindo a forte integração econômica entre os dois principais centros financeiros e corporativos do país. Na sequência aparecem ligações entre São Paulo e Brasília/Confins/Curitiba, reforçando o papel de São Paulo como hub nacional e mostrando que o tráfego aéreo se concentra em fluxos que unem núcleos de decisão política (Brasília), regiões industriais consolidadas (Minas Gerais) e polos urbanos de alta densidade econômica (Sul e Sudeste).
+As rotas com maior volume conectam São Paulo/Congonhas <> Rio de Janeiro/Santos Dumont, refletindo a forte integração econômica entre os dois principais centros financeiros e corporativos do país. Na sequência aparecem ligações entre São Paulo e Brasília/Confins/Curitiba, reforçando o papel de São Paulo como hub nacional e mostrando que o tráfego aéreo se concentra em fluxos que unem núcleos de decisão política (Brasília), regiões industriais consolidadas (Minas Gerais) e polos urbanos de alta densidade econômica (Sul e Sudeste).
 
 ---
 
