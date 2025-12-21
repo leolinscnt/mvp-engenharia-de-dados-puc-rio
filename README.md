@@ -2,6 +2,10 @@
 
 **Aluno:** Leonardo Cantisano Lins
 
+## Notebooks do Projeto
+O pipeline completo pode ser visualizado na pasta notebooks do repositório:
+./notebooks/
+
 ## Sumário
 
 - [Objetivo](#objetivo)
