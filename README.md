@@ -199,7 +199,7 @@ Durante o desenvolvimento das camadas Bronze → Silver → Gold, não houve per
 
 As transformações aplicadas foram mínimas e pontuais, envolvendo apenas:
 
-• padronização e renomeação de colunas para adequação ao formato Delta, e;
+• padronização e renomeação de colunas para adequação ao formato Delta; e
 
 • conversão dos campos de data e hora de string para timestamp, garantindo melhor capacidade de consulta e ordenação temporal.
 
@@ -245,7 +245,7 @@ Chegadas e partidas apresentam um mesmo padrão de domínio operacional concentr
 
 ![Pergunta 4](./evidencias/pergunta_4.png)
 
-Os 10 aeroportos com maior volume de voos representam, juntos, aproximadamente 64,23% de toda a movimentação aérea registrada no período analisado.
+Os 10 aeroportos com maior volume de voos representam, juntos, aproximadamente 64,21% de toda a movimentação aérea registrada no período analisado.
 
 Essa concentração indica que mais da metade do fluxo nacional de voos está distribuída entre um número reduzido de aeroportos, reforçando a centralização operacional do sistema aéreo brasileiro nas principais capitais e hubs regionais.
 
