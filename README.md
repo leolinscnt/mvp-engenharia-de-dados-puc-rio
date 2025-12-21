@@ -46,7 +46,7 @@ Além de produzir uma camada analítica que permita responder perguntas de negó
 
 • quais empresas dominam o mercado; e
 
-• como evoluiu o fluxo de transporter ao longo do ano.
+• como evoluiu o fluxo de transportes ao longo do ano.
 
 Essa estrutura transforma dados brutos dispersos em informação operacional útil, permitindo compreender padrões do transporte aéreo brasileiro ao longo do tempo com informações enriquecidas em detalhamento.
 
