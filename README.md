@@ -93,7 +93,9 @@ Para compor o MVP, foram utilizadas duas bases públicas disponibilizadas pela A
 
 A extração dos dados foi feita manualmente a partir dos arquivos CSV disponibilizados no portal de dados da ANAC, eliminando a necessidade de web scraping. Os arquivos originais foram armazenados localmente e posteriormente enviados para o ambiente Databricks como arquivos fonte para o Data Lake.
 
-Link para obtenção dos dados: https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas
+Link para obtenção dos dados da ANAC: https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas
+Link para dados de Aeroportos Públicos: https://sistemas.anac.gov.br/dadosabertos/Aerodromos/Aer%C3%B3dromos%20P%C3%BAblicos/Lista%20de%20aer%C3%B3dromos%20p%C3%BAblicos/
+Link para dados de Histórico dos Voos: https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Voo%20Regular%20Ativo%20%28VRA%29/
 
 ---
 
