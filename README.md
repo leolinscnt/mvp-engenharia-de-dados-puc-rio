@@ -329,6 +329,6 @@ Além disso, vejo oportunidades futuras para evolução do projeto, como:
 
 • ampliação da análise histórica, incorporando dados de anos anteriores,
 
-• inclusão de voos internacionais para comparação de malha e sazonalidade
+• inclusão de voos internacionais para comparação de malha e sazonalidade.
 
 
