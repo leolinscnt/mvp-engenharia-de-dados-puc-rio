@@ -28,19 +28,27 @@ Todo o pipeline pode ser visualizado na pasta de notebooks do repositório:
 O objetivo deste MVP é construir um pipeline de dados completo em nuvem utilizando Databricks, desde ingestão, transformação, modelagem e análise, permitindo responder perguntas de negócio relacionadas ao comportamento do histórico de voos domésticos no Brasil ao longo do ano de 2024.
 
 ## Problema a ser resolvido
-O setor aéreo é influenciado por diversos fatores, como sazonalidade, geografia, demanda e capacidade operacional. O objetivo deste MVP é avaliar o comportamento dos voos domésticos no Brasil em 2024, identificando padrões operacionais, sazonalidade e concentração do mercado.
+O histórico de voos domésticos do Brasil está distribuído em diversas bases públicas da ANAC, sem estrutura de análise integrada que permita visualizar o comportamento operacional do setor ao longo do tempo. Não há, em uma única fonte ou painel, indicadores consolidados sobre sazonalidade, rotas, aeroportos e atuação das companhias aéreas com dados enriquecidos de detalhamento que facilitem a identificação de cada variável além dos códigos.
 
-Ao responder as perguntas de negócio abaixo, será possível compreender:
+Este MVP se propõe a solucionar essa lacuna construindo um pipeline de dados completo em nuvem capaz de:
+
+• centralizar dados históricos de voos domésticos de 2024 e futuramente incrementar com os dados de outros anos;
+
+• transformar e padronizar registros para análise;
+
+Além de produzir uma camada analítica que permita responder perguntas de negócio sobre:
 
 • onde o setor aéreo é mais intenso;
 
 • quais aeroportos concentram maior atividade;
 
-• quais rotas são mais movimentadas;
+• quais são as principais rotas de conexão;
 
 • quais empresas dominam o mercado; e
 
-• como evoluiu o fluxo de transporte ao longo do ano.
+• como evoluiu o fluxo de transporter ao longo do ano.
+
+Essa estrutura transforma dados brutos dispersos em informação operacional útil, permitindo compreender padrões do transporte aéreo brasileiro ao longo do tempo com informações enriquecidas em detalhamento.
 
 ## Perguntas de Negócio
 
