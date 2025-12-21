@@ -32,9 +32,9 @@ O histórico de voos domésticos do Brasil está distribuído em diversas bases 
 
 Este MVP se propõe a solucionar essa lacuna construindo um pipeline de dados completo em nuvem capaz de:
 
-• centralizar dados históricos de voos domésticos de 2024 e futuramente incrementar com os dados de outros anos;
+• centralizar dados históricos de voos domésticos de 2024 e futuramente incrementar com os dados de outros anos; e
 
-• transformar e padronizar registros para análise;
+• transformar e padronizar registros para análise.
 
 Além de produzir uma camada analítica que permita responder perguntas de negócio sobre:
 
