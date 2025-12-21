@@ -335,8 +335,10 @@ Reconheço também alguns pontos de melhoria natural nesta etapa do meu desenvol
 
 Além disso, vejo oportunidades futuras para evolução do projeto, como:
 
-• ampliação da análise histórica, incorporando dados de anos anteriores,
+• ampliação da análise histórica, incorporando dados de anos anteriores;
 
-• inclusão de voos internacionais para comparação de malha e sazonalidade.
+• inclusão de voos internacionais para comparação de malha e sazonalidade; e
+
+• aprofundamento analítico sobre a operação aérea, utilizando os campos de situação do voo (realizado, cancelado, não informado) e os dados de partida e chegada previstos e reais para medir desempenho operacional.
 
 
