@@ -212,7 +212,7 @@ Embora a tabela contenha voos realizados e cancelados, as análises foram conduz
 ## Qualidade dos dados
 A base utilizada apresentou estrutura sólida, organizada e consistente, proveniente diretamente das fontes oficiais da ANAC, garantindo confiabilidade ao processo analítico.
 
-Durante o desenvolvimento das camadas Bronze → Silver → Gold, não houve perda de registros relevantes no histórico de voos, exceto a exclusão proposital de voos internacionais por alinhamento ao escopo do projeto, focado apenas em operações domésticas.
+Durante o desenvolvimento das camadas Bronze > Silver > Gold, não houve perda de registros relevantes no histórico de voos, exceto a exclusão proposital de voos internacionais por alinhamento ao escopo do projeto, focado apenas em operações domésticas.
 
 As transformações aplicadas foram mínimas e pontuais, envolvendo apenas:
 
