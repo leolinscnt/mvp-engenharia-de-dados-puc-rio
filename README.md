@@ -25,10 +25,15 @@ O objetivo deste MVP é construir um pipeline de dados completo em nuvem utiliza
 O setor aéreo é influenciado por diversos fatores, como sazonalidade, geografia, demanda e capacidade operacional. O objetivo deste MVP é avaliar o comportamento dos voos domésticos no Brasil em 2024, identificando padrões operacionais, sazonalidade e concentração do mercado.
 
 Ao responder as perguntas de negócio abaixo, será possível compreender:
+
 • onde o setor aéreo é mais intenso;
+
 • quais aeroportos concentram maior atividade;
+
 • quais rotas são mais movimentadas;
+
 • quais empresas dominam o mercado; e
+
 • como evoluiu o fluxo de transporte ao longo do ano.
 
 ## Perguntas de Negócio
@@ -57,14 +62,21 @@ Ao responder as perguntas de negócio abaixo, será possível compreender:
 
 ### Processamento:
 O pipeline foi construído seguindo o modelo Bronze → Silver → Gold:
+
 • Bronze: ingestão dos arquivos CSV, padronização de colunas e armazenamento inicial em Delta;
+
 • Silver: tratamento e enriquecimento dos dados (conversão de datas, remoção de voos internacionais, normalização e derivação de colunas temporais); e
+
 • Gold: consolidação final em uma tabela analítica única (voos_flat), integrando informações de voos, aeroportos e companhias.
 
 ### Tecnologias e Bibliotecas:
+
 • Databricks  
-• PySpark (SQL + DataFrames)  
-• pyspark.sql.functions / pyspark.sql.types  
+
+• PySpark (SQL + DataFrames)
+
+• pyspark.sql.functions / pyspark.sql.types
+
 • Consultas SQL  
 
 ### Armazenamento:
@@ -100,22 +112,33 @@ Nesta camada foram armazenados os arquivos exatamente como fornecidos pela ANAC.
 ## Camada Silver – dados tratados e enriquecidos
 
 Nesta camada foram aplicadas transformações estruturais e de padronização, utilizando Pyspark e consultas SQL para validação de integridade, incluindo:
+
 • conversão de datas/horas do formato string para formato timestamp;
+
 • filtragem para manter apenas voos domésticos, aeroportos em atividade e com UF definido;
+
 • criação de flag de "voo realizado"; e
+
 • seleção de colunas analíticas relevantes.
 
 Além disso, foram adicionadas novas colunas, que permitiram análises temporais sem necessidade de retrabalho na camada gold. São elas, evidenciadas com a imagem abaixo:
+
 • ano do voo;
+
 • mês do voo; e
+
 • estação do ano.
 
 ![Camada Silver](./evidencias/evidencia_silver.png)
 
 Nesta camada, foram realizadas:
+
 • Checagem de nulos;
+
 • Checagem de consistência dos códigos ICAO;
+
 • Checagem dos dados de aeroportos; e
+
 • Checagem das timestamps do histórico de voos.
 
 Além disso, foram mantidos todos os registros de voos domésticos de passageiros, independentemente de sua situação operacional, de forma a preservar o histórico completo do fenômeno estudado.
@@ -127,9 +150,13 @@ Estas transformações garantiram a integridade necessária para as análises.
 ## Construção manual da base de companhias aéreas
 
 Devido a não existência de uma base estruturada pública de companhias que relaciona o código ICAO com o nome comercial da empresa aérea, foi criada uma tabela, na Camada Silver, contendo apenas os dados das companhias que haviam realizado voos domésticos em 2024 conforme consulta prévia, trazendo os seguintes dados:
+
 • código ICAO;
+
 • nome da companhia;
+
 • tipo de operação; e
+
 • flag ativo para análise.
 
 Essa decisão reduziu inconsistências e eliminou a dependência de fontes terceiras de baixa confiabilidade.
@@ -139,9 +166,13 @@ Essa decisão reduziu inconsistências e eliminou a dependência de fontes terce
 ## Camada Gold – visão analítica consolidada
 
 A camada Gold resultou em uma tabela flat criada com SQL, consolidando, em um único dataset:
+
 • voos;
+
 • aeroportos de origem com dados detalhados;
+
 • aeroportos de destino com dados detalhados; e
+
 • companhias aéreas com dados detalhados.
 
 A tabela mvp.gold.voos_flat contém aproximadamente 800 mil linhas de voos domésticos processados (realizados, cancelados ou não informados), cobrindo todos os meses de 2024, conforme evidência abaixo:
@@ -166,7 +197,9 @@ A base utilizada apresentou estrutura sólida, organizada e consistente, proveni
 Durante o desenvolvimento das camadas Bronze → Silver → Gold, não houve perda de registros relevantes no histórico de voos, exceto a exclusão proposital de voos internacionais por alinhamento ao escopo do projeto, focado apenas em operações domésticas.
 
 As transformações aplicadas foram mínimas e pontuais, envolvendo apenas:
+
 • padronização e renomeação de colunas para adequação ao formato Delta, e;
+
 • conversão dos campos de data e hora de string para timestamp, garantindo melhor capacidade de consulta e ordenação temporal.
 
 Como ponto de melhoria identificado, destaca-se a ausência de uma base nacional estruturada de companhias aéreas com nomes comerciais referenciados por ICAO. Essa lacuna demandou a criação manual de uma tabela auxiliar para enriquecer as análises e compor a camada Gold.
@@ -283,7 +316,9 @@ Avalio que essa evolução foi refletida na entrega final: um pipeline robusto, 
 Reconheço também alguns pontos de melhoria natural nesta etapa do meu desenvolvimento. Entre eles, o aprofundamento no PySpark, especialmente para construção de visualizações e manipulação de dados em escala mais avançada, o que permitirá explorar resultados de maneira ainda mais clara e intuitiva.
 
 Além disso, vejo oportunidades futuras para evolução do projeto, como:
+
 • ampliação da análise histórica, incorporando dados de anos anteriores,
+
 • inclusão de voos internacionais para comparação de malha e sazonalidade
 
 
