@@ -75,17 +75,17 @@ Essa estrutura transforma dados brutos dispersos em informação operacional út
 ## Arquitetura da Solução
 
 ### Processamento:
-O pipeline foi construído seguindo o modelo Delta Medallion (Camadas Bronze, Silver e Gold):
+O pipeline foi construído seguindo o modelo Delta Medallion Architecture (Camadas Bronze, Silver e Gold):
 
 • Bronze: ingestão dos arquivos CSV, padronização de colunas e armazenamento inicial em Delta;
 
 • Silver: tratamento e enriquecimento dos dados (conversão de datas, remoção de voos internacionais, normalização e derivação de colunas temporais); e
 
-• Gold: consolidação final em uma tabela analítica única (voos_flat), integrando informações de voos, aeroportos e companhias.
+• Gold: consolidação final em uma tabela analítica única (voos_flat), integrando informações de voos, aeroportos e companhias para suporte direto às consultas de negócio.
 
 ### Tecnologias e Bibliotecas:
 
-• Databricks  
+• Databricks (ambiente de processamento distribuído)
 
 • PySpark (SQL + DataFrames)
 
@@ -94,7 +94,7 @@ O pipeline foi construído seguindo o modelo Delta Medallion (Camadas Bronze, Si
 • Consultas SQL  
 
 ### Armazenamento:
-Delta Lake
+Delta Lake (transacional, versionado e escalável)
 
 ### Fonte dos dados:
 Agência Nacional de Aviação Civil (ANAC)
