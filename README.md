@@ -2,21 +2,22 @@
 
 **Aluno:** Leonardo Cantisano Lins
 
-## Sumário
-- Objetivo
-- Problema a ser resolvido
-- Perguntas de Negócio
-- Arquitetura da Solução
-- Coleta dos Dados
-- Modelagem de Dados
-- Camada Bronze – dados brutos
-- Camada Silver – dados tratados e enriquecidos
-- Construção manual da base de companhias aéreas
-- Camada Gold – visão analítica consolidada
-- Catálogo de Dados
-- Qualidade dos dados
-- Resultados das Perguntas de Negócio
-- Autoavaliação
+## 📌 Sumário
+
+- [Objetivo](#objetivo)
+- [Problema a ser resolvido](#problema-a-ser-resolvido)
+- [Perguntas de Negócio](#perguntas-de-negócio)
+- [Arquitetura da Solução](#arquitetura-da-solução)
+- [Coleta dos Dados](#coleta-dos-dados)
+- [Modelagem de Dados](#modelagem-de-dados)
+- [Camada Bronze](#camada-bronze--dados-brutos)
+- [Camada Silver](#camada-silver--dados-tratados-e-enriquecidos)
+- [Construção manual da base de companhias aéreas](#construção-manual-da-base-de-companhias-aéreas)
+- [Camada Gold](#camada-gold--visão-analítica-consolidada)
+- [Catálogo de Dados](#catálogo-de-dados)
+- [Qualidade dos dados](#qualidade-dos-dados)
+- [Resultados das Perguntas de Negócio](#resultados-das-perguntas-de-negócio)
+- [Autoavaliação](#autoavaliação)
 
 ## Objetivo
 O objetivo deste MVP é construir um pipeline de dados completo em nuvem utilizando Databricks, desde ingestão, transformação, modelagem e análise, permitindo responder perguntas de negócio relacionadas ao comportamento do histórico de voos domésticos no Brasil ao longo do ano de 2024.
