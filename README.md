@@ -2,9 +2,10 @@
 
 **Aluno:** Leonardo Cantisano Lins
 
-## Notebooks do Projeto
-O pipeline completo pode ser visualizado na pasta notebooks do repositório:
-./notebooks/
+## Notebooks do Projeto  
+Todo o pipeline pode ser visualizado na pasta de notebooks do repositório:  
+[Acessar notebooks](./notebooks/)
+
 
 ## Sumário
 
